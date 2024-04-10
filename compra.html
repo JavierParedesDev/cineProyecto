@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/compra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>PAGAR</title>
 </head>
 <body>
     <div class="container">
+
+        <form id="purchaseForm" action="process_purchase.php" method="POST">
         <div class="container-wepay">
             <div>
                 <h1>¡BIENVENIDO A WEPAY!</h1>
@@ -24,6 +27,7 @@
        
 
         <form action="process_purchase.php" method="POST">
+
             <i class="fa-solid fa-ticket"></i>
 
             <label for="name">INGRESE SU NOMBRE</label>
@@ -43,6 +47,10 @@
             <label for="quantity">CANTIDAD:</label>
             <input type="number" id="quantity" name="quantity" min="1" class="box-numero" required><br><br>
             
+
+            <input class="comprar-btn" type="button" value="COMPRAR" onclick="validarCompra()">
+        </form>
+
             <input class="comprar-btn" type="submit" value="COMPRAR">
 
             <a class="volver-enlace" href="index.html"><i class="fa-solid fa-arrow-left"></i> VOLVER</a>
@@ -51,6 +59,7 @@
        
 
     </div>
-   
+
+    <script src="javaS/script.js"></script>
 </body>
 </html>
