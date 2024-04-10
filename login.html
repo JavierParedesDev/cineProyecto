@@ -4,36 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Login</title>
 </head>
 <body>
 
     <div class="box">
-        <form>
+        <form id="loginForm" onsubmit="return validateForm()">
             <h1>CINE<span class="luckiest-guy-regular">GOOD</span></h1>
-            <P class="Login-p">L O G I N</P>
+            <p class="Login-p">L O G I N</p>
             <div class="inputbox">
-                
-                <input type="email" required>
-                <span> Ingrese su correo electronico</span>
+                <input type="email" id="email">
+                <span>Ingrese su correo electrónico</span>
                 <i></i>
             </div>
-        
-            
             <div class="inputbox">
-                
-                <input type="password"required>
-                <span> Ingrese su Contraseña</span>
+                <input type="password" id="password">
+                <span>Ingrese su Contraseña</span>
                 <i></i>
             </div>
-            
-        
-
-        <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar">
+            <div id="mensajeError" style="color: #bd71f0;"></div>
         </form>
-
     </div>
-   
-    
+
+    <script src="javaS/script.js"></script>
+
 </body>
 </html>
