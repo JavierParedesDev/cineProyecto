@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,24 @@
 </head>
 <body>
     <div class="container">
+
         <form id="purchaseForm" action="process_purchase.php" method="POST">
+        <div class="container-wepay">
+            <div>
+                <h1>¡BIENVENIDO A WEPAY!</h1>
+                <p>¡Gracias por elegirnos! Por favor, complete el siguiente formulario para realizar su compra.</p>
+            </div>
+            <img class="img-wepay" src="img/wepay.jpg" alt="">
+            <div>
+                <i class="fa-solid fa-check"></i><label> PAGA SEGURO PAGA CON <span>WEPAY</span></label>
+            </div>
+
+       </div>
+       
+       
+
+        <form action="process_purchase.php" method="POST">
+
             <i class="fa-solid fa-ticket"></i>
 
             <label for="name">INGRESE SU NOMBRE</label>
@@ -30,8 +47,17 @@
             <label for="quantity">CANTIDAD:</label>
             <input type="number" id="quantity" name="quantity" min="1" class="box-numero" required><br><br>
             
+
             <input class="comprar-btn" type="button" value="COMPRAR" onclick="validarCompra()">
         </form>
+
+            <input class="comprar-btn" type="submit" value="COMPRAR">
+
+            <a class="volver-enlace" href="index.html"><i class="fa-solid fa-arrow-left"></i> VOLVER</a>
+        </form>
+
+       
+
     </div>
 
     <script src="javaS/script.js"></script>
