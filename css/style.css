@@ -111,6 +111,17 @@ nav a{
     }
 
 }
+.checkbtn{
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    margin-left: 10px;
+}
+#check{
+    display: none;
+}
+
 .select-style{
     background-color: #000000;
     border: none;
@@ -356,6 +367,246 @@ footer P{
 
     }
 }
+.header-button-Nav{
+    display: none;
+}
+/* responsive */
+
+    @media screen and (max-width: 1441px){
+        header{
+            display: none;
+        }
+        .checkbtn{
+            display: block;
+            z-index: 10000;
+            position: fixed;
+            top: 0;
+            cursor: pointer;
+        }
+        #check:checked ~ nav{
+            left: 0;
+            transition: all .5s ease;
+         
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 1px;
+            flex-direction: column;
+            background-color: #ff0000;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            height: 100%;
+            width: 20%;
+            left: -100%;
+            transition: all .5s ease;
+
+        }
+        nav h1{
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .luckiest-guy-regular{
+            color: #fff;
+        }
+        nav a{
+            color: #fff;
+            background-color: #810000;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        .content-select{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .content-select select{
+            margin-right: 0;
+        }
+        .header-button-Nav{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .registro-btn{
+            background-color: #666666;
+            border: none;
+            padding: 7px 30px;
+            color: #fff;
+            font-family: "Abel", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .iniciar-session{
+            background-color: #ce0000;
+            border: none;
+            padding: 7px 30px;
+            color: #fff;
+            font-family: "Abel", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            transition: .5s;
+        }
+        .banner-mi img{
+            width: 100%;
+        }
+        .banner-mi button{
+            display: block;
+            transform: translate(-50%, 0);
+        }
+        .estrenosSemana img{
+            display: flex;
+        }
+        .primera-cartelera{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: space-around;
+            margin: 30px 10px 30px 10px;
+            background-image: url(../banner.jpg);
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .estreno{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+     
+    }
+
+    @media screen and (max-width: 1024px){
+        
+        nav{
+            width: 50%;
+        }
+        .carrusel-div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .carrusel-div div{
+            width: 300px;
+            height: 300px;
+        }
+        .text-carrusel{
+            width: 300px;
+        }
+        .btn-mas-info{
+            left: 100px;
+            bottom: 70px;
+        }
+        .preventas{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 40px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+        .cartelera-prev{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: space-around;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        
+    }
+    @media screen and (max-width: 768px){
+        nav{
+            width: 85%;
+        }
+        h1{
+            font-size: 20px;
+        }
+        .carousel{
+            display: none;
+        }
+        .carrusel-div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .carrusel-div div{
+            width: 300px;
+            height: 300px;
+        }
+        .text-carrusel{
+            width: 300px;
+        }
+        .btn-mas-info{
+            left: 100px;
+            bottom: 70px;
+        }
+        .banner-mi{
+            display: none;
+        }
+     
+        
+    }
+    @media screen and (max-width: 430px){
+      
+        .primera-cartelera{
+            margin: 50px;
+            padding: 10px;
+            gap: 20px;
+        }
+       
+        .preventas{
+            margin: 50px;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .carrusel-div{
+            display: flex;
+            gap: 0px;
+            padding-bottom: 20px;
+        }
+      
+        .preventas img{
+            width: 100%;
+        }
+        .text-carrusel{
+            display: block;
+
+        }
+        .btn-mas-info{
+            position: static;
+        }
+        
+        .footer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+        .div-img-FOOTER{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .div-img-FOOTER img{
+            width: 30px;
+            opacity: 50%;
+        }
+    }
+   
+    
+
 /* animaciones*/
 
 @keyframes moveimg {
