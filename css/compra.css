@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+form{
+    width: 300px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    position: relative;
+    margin: 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #ffffff;
+
+}
+
+form input{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+
+    &:focus{
+        border: #000000 1px solid;
+    }
+}
+.box-numero{
+    width: 50px;
+}
+i{
+    color: #00c01a;
+    font-size: 3em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+select{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+
+    &:focus{
+        border: #000000 1px solid;
+    }
+}
+.comprar-btn{
+    background-color: #00c01a;
+
+    &:hover{
+        background-color: #00690e;
+    }
+}
