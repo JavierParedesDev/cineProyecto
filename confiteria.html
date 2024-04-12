@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/confiteria.css">
     <title>confiteria</title>
+
 </head>
 <body>
     <nav>
@@ -15,6 +17,11 @@
         <a href="">PROMOCIONES</a>
         <a href="">CONFITERÍA</a>
         <div class="content-select">
+        <span class="material-symbols-outlined cartShopping">
+            shopping_cart
+            <label class="notificacion" id="labelNumero">+</label>
+        </span>
+        
         
     </nav>
     <div class="titulo">
@@ -27,44 +34,56 @@
        
         <div class="container-confite">
             <div class="div-img">
+                <h1 id="nombreProducto">M&M</h1>
                 <img src="imgConfite/03175a48-2343-4671-9912-947822c94ccd.jpeg" alt="Producto 1">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('M&M')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1 id="nombreProducto">Gatolate</h1>
                 <img src="imgConfite/4IYFP1EksyVn70dvVrAikboQeWctxamVl9wDr9zH.png" alt="Producto 2">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Gatolate')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Cheetos</h1>
                 <img src="imgConfite/cheeto300g5590.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Cheetos')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Bilz</h1>
                 <img src="imgConfite/bilz.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Bilz')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>DeTodito</h1>
                 <img src="imgConfite/CYaCnk50V05jZHtxYt6lDNLXKBSlh3QJMwzEEJpV.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('DeTodito')" >Agregar al carrito de compra</button>
+
             </div>
             <div class="div-img">
+                <h1>RamitasEvercrisp</h1>
                 <img src="imgConfite/dRLaSIpJSgVYlI4neOc6mh3Dm8lsnXpuKdJdIzZS.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('RamitasEvercrisp')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Orangine</h1>
                 <img src="imgConfite/fresa-1000-1.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Orangine')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Maní</h1>
                 <img src="imgConfite/GfHmHL0BnDs0fPGvUTNRtYsKDhFjoRUI0lISzO2U.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Maní')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Orangine</h1>
                 <img src="imgConfite/images.jpg" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Orangine')" >Agregar al carrito de compra</button>
             </div>
             <div class="div-img">
+                <h1>Palomitas</h1>
                 <img src="imgConfite/pngtree-pop-corn-food-png-image_10202976.png" alt="Producto 3">
-                <button>Agregar al carrito de compra</button>
+                <button onclick="agregar('Palomitas')" >Agregar al carrito de compra</button>
+
             </div>
 
         </div>
@@ -80,5 +99,11 @@
             <img src="instagram.png" alt="">
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="javaS/confiteria.js"></script>
+   
+
 </body>
 </html>
