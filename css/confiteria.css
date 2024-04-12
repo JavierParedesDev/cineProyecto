@@ -35,6 +35,19 @@ nav a{
     }
 
 }
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 3px;
+    margin: 0;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -45,7 +58,8 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5%;
+    width: 70%;
 }
 .container-confite div{
     width: 300px;
@@ -57,6 +71,10 @@ nav a{
     background-color: #ffffff;
     box-shadow: 0 0 10px #000000;
     text-align: center;
+
+    &:hover{
+        box-shadow: 0 0 10px #ff0000;
+    }
 }
 
 .container-confite div button{
@@ -71,9 +89,9 @@ nav a{
         background-color: #ff0000;
     }
 }
-div img{
-    width: 250px;
-    height: 250px;
+.div-img img{
+    width: 150px;
+    
     padding: 10px;
 }
 .div-img{
@@ -105,4 +123,41 @@ h1{
     margin: 0;
     padding: 0;
     justify-content: center;
+}
+footer{
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+footer h1{
+    color: #ffffff;
+   &:hover{
+    translate: 0 2px;
+   }
+}
+footer P{
+    color: #ffffff;
+    margin: 0;
+}
+.div-img-FOOTER{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+.div-img-FOOTER img{
+    width: 30px;
+    opacity: 50%;
+
+    &:hover{
+        opacity: 100%;
+    }
+
 }
