@@ -3,6 +3,8 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -13,6 +15,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 50px;
+    background-color: #ff0000;
 }
 nav h1{
     text-align: left;
@@ -24,17 +27,17 @@ nav h1{
 nav a{
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 
     &:hover{
-        color: #ce0000;
+        color: #000000;
         translate: 0 2px;
     }
 
 }
 .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 10px 20px;
 }
@@ -43,6 +46,30 @@ nav a{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+}
+.container-confite div{
+    width: 300px;
+    margin: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #000000;
+    text-align: center;
+}
+
+.container-confite div button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+
+    &:hover{
+        background-color: #ff0000;
+    }
 }
 div img{
     width: 250px;
@@ -55,4 +82,27 @@ div img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+h1{
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+  
+}
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffcccc;
+  }
+
+.titulo {
+    display: flex;
+    font-size: 2em;
+    color: #ff0000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
