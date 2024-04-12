@@ -241,19 +241,30 @@ nav a{
 }
 .preventas{
   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
     margin-top: 40px;
     padding-top: 20px;
     margin-bottom: 30px;
 
 }
+
+.preventas1 {
+
+    display: flex;
+    flex-direction: column;
+    
+}
 .cartelera-prev{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
     margin-top: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 5px;
-    justify-content: space-around;
     
 }
 .preventas img{
